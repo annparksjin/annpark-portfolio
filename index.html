@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -25,9 +25,10 @@
       <a href="#hero" class="brand">AP</a>
       <nav>
         <a href="#about">About Me</a>
-        <a href="#interactive">Interactive Projects</a>
         <a href="#video">Video Projects</a>
+        <a href="#interactive">Interactive Projects</a>
         <a href="#manual">User Manual</a>
+        <a href="#map">Other Projects</a>
         <a href="#contacts">Contacts</a>
       </nav>
       <button class="menu-btn" aria-expanded="false" aria-controls="mobile-nav">
@@ -40,9 +41,8 @@
       <a href="#about">About Me</a>
       <a href="#video">Video Projects</a>
       <a href="#interactive">Interactive Projects</a>
-      <a href="#video">Videomaking</a>
       <a href="#manual">User Manual</a>
-      <a href="#map">STEBA</a>
+      <a href="#map">Other Projects</a>
       <a href="#contacts">Contacts</a>
     </nav>
 
@@ -50,14 +50,13 @@
       <section id="hero" class="panel hero reveal" data-panel>
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Creative Producer · AD · Interactive Designer</p>
+            <p class="eyebrow">Creative Producer · Global Marketer</p>
             <h1>
-              <span class="line">Ann Park</span>
+              <span class="line hero-name-line">Ann Park</span>
               <span class="line accent">Portfolio</span>
             </h1>
             <p class="hero-desc">
-              Thin typography, editorial spacing, and immersive motion translated
-              into a refined portfolio experience.
+              NYU Alum | B.A in Film &amp; Television, Minor in Business of Entertainment, Media and Technology.
             </p>
             <div class="hero-actions">
               <a class="cta" href="#interactive">View Projects</a>
@@ -136,6 +135,7 @@
       <section id="video" class="panel video-panel reveal" data-panel>
         <div class="video-shell">
           <div class="title-shell video-title-shell">
+            <p class="panel-index">02</p>
             <div class="giant-title">VIDEO PROJECTS</div>
             <p class="title-meta">
               Worked on a variety of video projects, producing marketing content and short-form vertical videos for digital
@@ -149,19 +149,154 @@
             <div class="video-window">
               <div class="video-track" id="video-track">
                 <article class="video-slide">
-                  <video controls preload="metadata" playsinline>
-                    <source src="./assets/videos/final-cut.mp4" type="video/mp4" />
-                  </video>
+                  <div class="video-embed-card">
+                    <div class="video-media is-short">
+                      <div class="video-media-frame">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/AIR03nP8a8k"
+                          title="NYFMF: Tribeca Festival 2025"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube Short</span>
+                      <h3>NYFMF: Tribeca Festival 2025</h3>
+                      <p>Short-form festival preview for NYFMF at Tribeca Festival 2025.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtube.com/shorts/AIR03nP8a8k?feature=share"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open NYFMF Tribeca Festival 2025 video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
                 </article>
                 <article class="video-slide">
-                  <video controls preload="metadata" playsinline>
-                    <source src="./assets/videos/nevins-charney-version.mp4" type="video/mp4" />
-                  </video>
+                  <div class="video-embed-card">
+                    <div class="video-media">
+                      <div class="video-media-frame">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/FRjZ6FrU7-E"
+                          title="STEBA X NBCU Power of Contents Summit Highlights"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube</span>
+                      <h3>STEBA X NBCU Power of Contents Summit Highlights</h3>
+                      <p>Summit highlight reel capturing key moments and speaker energy from the event.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtu.be/FRjZ6FrU7-E"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
                 </article>
                 <article class="video-slide">
-                  <video controls preload="metadata" playsinline>
-                    <source src="./assets/videos/park-slope-halloween-parade.mp4" type="video/mp4" />
-                  </video>
+                  <div class="video-embed-card">
+                    <div class="video-media">
+                      <div class="video-media-frame">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/YYBEObWS_rI"
+                          title="Charney: Nevins"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube</span>
+                      <h3>Charney: Nevins</h3>
+                      <p>Campaign-style preview linking out to the completed Charney: Nevins video.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtu.be/YYBEObWS_rI"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open Charney Nevins video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="video-slide">
+                  <div class="video-embed-card">
+                    <div class="video-media is-short">
+                      <div class="video-media-frame">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/8uKWcKV82Uw"
+                          title="Park Slope Halloween Parade"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube Short</span>
+                      <h3>Park Slope Halloween Parade</h3>
+                      <p>Vertical short capturing the atmosphere and motion of the Brooklyn parade.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open Park Slope Halloween Parade video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="video-slide">
+                  <div class="video-embed-card">
+                    <div class="video-media is-short">
+                      <div class="video-media-frame">
+                        <iframe
+                          src="https://www.youtube-nocookie.com/embed/ErMFFLHMbCM"
+                          title="STEBA X NBCU: The Power of Content Speaker Highlights"
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube Short</span>
+                      <h3>STEBA X NBCU: The Power of Content Speaker Highlights</h3>
+                      <p>Short-form speaker highlight cut focused on stage moments and audience engagement.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtube.com/shorts/ErMFFLHMbCM"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open STEBA X NBCU The Power of Content Speaker Highlights video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
                 </article>
               </div>
             </div>
@@ -174,6 +309,7 @@
 
       <section id="interactive" class="panel interactive reveal" data-panel>
         <div class="interactive-head">
+          <p class="panel-index">03</p>
           <h2>INTERACTIVE PROJECTS</h2>
           <p class="interactive-meta">
             Developed interactive web projects using p5.js and JavaScript, creating playable experiences such as
@@ -237,6 +373,7 @@
       <section id="manual" class="panel manual reveal" data-panel>
         <div class="manual-wrap">
           <div class="manual-title">
+            <p class="panel-index">04</p>
             <h2>USER<br />MANUAL</h2>
             <p class="manual-subcopy">click to learn more about me</p>
           </div>
@@ -334,6 +471,7 @@
       <section id="map" class="panel steba-panel reveal" data-panel>
         <div class="steba-shell">
           <div class="steba-stack" role="tablist" aria-label="STEBA sections">
+            <p class="panel-index steba-section-index">05</p>
             <button
               class="steba-row active"
               data-steba-row
@@ -352,12 +490,20 @@
               data-steba-row
               data-target="steba-2"
               data-media-key="producer-ad"
-              data-title="Producer / AD"
-              data-description="기획 의도 정리, 비주얼 방향성 정의, 협업 커뮤니케이션, 프로토타이핑까지 일관된 흐름으로 연결합니다."
+              data-title="Producer"
+              data-description="Producer Works:
+Bursting at the Fold - Caleb Kim (Fall 2025-Spring 2026), Short Film
+Cupbap - David Choi (Fall 2025-Spring 2026), Short Film
+Afterimage - Mia Dang (Fall 2025), Music Video
+L'esprit du debutant - David Choi (Spring 2025), Short Film
+Berry Blue - Caleb Kim (Fall 2024), Short Film
+Missing People - Jihyun Mun (Spring 2024), Short Vertical Commercial
+Vertigo - Caleb Kim (Summer 2024), Short Film
+"
               role="tab"
               aria-selected="false"
             >
-              <span>Producer/AD</span>
+              <span>Producer</span>
               <small>Role and process</small>
             </button>
             <button
@@ -409,6 +555,7 @@
 
       <section id="contacts" class="panel contacts reveal" data-panel>
         <div class="contacts-title">
+          <p class="panel-index">06</p>
           <h2>Contacts</h2>
           <p>Let’s build something elegant and alive.</p>
         </div>

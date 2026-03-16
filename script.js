@@ -260,18 +260,12 @@ const videoTrack = document.getElementById("video-track");
 const videoPrev = document.getElementById("video-prev");
 const videoNext = document.getElementById("video-next");
 const videoSlides = videoTrack ? Array.from(videoTrack.querySelectorAll(".video-slide")) : [];
-const videoEls = videoTrack ? Array.from(videoTrack.querySelectorAll("video")) : [];
 let videoIndex = 0;
 
 function renderVideoSlide(index) {
   if (!videoTrack || !videoSlides.length) return;
   videoIndex = (index + videoSlides.length) % videoSlides.length;
   videoTrack.style.transform = `translateX(-${videoIndex * 100}%)`;
-  videoEls.forEach((video, idx) => {
-    if (idx !== videoIndex) {
-      video.pause();
-    }
-  });
 }
 
 if (videoPrev && videoNext && videoSlides.length) {
