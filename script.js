@@ -1,4 +1,5 @@
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const mobileLayoutQuery = window.matchMedia("(max-width: 900px)");
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(".reveal");
@@ -101,7 +102,7 @@ bubbles.forEach((bubble) => {
 });
 
 // Subtle floating motion for bubbles
-if (!prefersReducedMotion) {
+if (!prefersReducedMotion && !mobileLayoutQuery.matches) {
   let start = 0;
   const animateBubbles = (t) => {
     if (!start) start = t;
@@ -119,6 +120,10 @@ if (!prefersReducedMotion) {
     requestAnimationFrame(animateBubbles);
   };
   requestAnimationFrame(animateBubbles);
+} else {
+  bubbles.forEach((bubble) => {
+    bubble.style.transform = bubble.classList.contains("active") ? "scale(1.03)" : "";
+  });
 }
 
 // STEBA row / detail interaction
