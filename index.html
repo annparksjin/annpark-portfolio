@@ -6,7 +6,7 @@
     <title>Ann Park Portfolio</title>
     <meta
       name="description"
-      content="Ann Park portfolio website with interactive sections for profile, projects, and contacts."
+      content="Ann Park portfolio website with profile, video projects, and contact information."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,6 @@
       <nav>
         <a href="#about">About Me</a>
         <a href="#video">Video Projects</a>
-        <a href="#interactive">Interactive Projects</a>
         <a href="#manual">User Manual</a>
         <a href="#map">Other Projects</a>
         <a href="#contacts">Contacts</a>
@@ -40,7 +39,6 @@
       <a href="#hero">Home</a>
       <a href="#about">About Me</a>
       <a href="#video">Video Projects</a>
-      <a href="#interactive">Interactive Projects</a>
       <a href="#manual">User Manual</a>
       <a href="#map">Other Projects</a>
       <a href="#contacts">Contacts</a>
@@ -59,7 +57,7 @@
               NYU Alum | B.A in Film &amp; Television, Minor in Business of Entertainment, Media and Technology.
             </p>
             <div class="hero-actions">
-              <a class="cta" href="#interactive">View Projects</a>
+              <a class="cta" href="#video">View Projects</a>
               <a class="link-cta" href="#about">About Me</a>
             </div>
           </div>
@@ -134,14 +132,16 @@
 
       <section id="video" class="panel video-panel reveal" data-panel>
         <div class="video-shell">
-          <div class="title-shell video-title-shell">
+          <header class="video-header-card">
             <p class="panel-index">02</p>
-            <div class="giant-title">VIDEO PROJECTS</div>
-            <p class="title-meta">
-              Worked on a variety of video projects, producing marketing content and short-form vertical videos for digital
-              platforms, leading the creative planning and production process from development to post-production.
-            </p>
-          </div>
+            <div class="video-header-copy">
+              <h2 class="video-display">VIDEO PROJECTS</h2>
+              <p class="video-header-meta">
+                Worked on a variety of video projects, producing marketing content and short-form vertical videos for digital
+                platforms, leading the creative planning and production process from development to post-production.
+              </p>
+            </div>
+          </header>
           <div class="video-stage">
             <button class="video-arrow video-arrow-prev" id="video-prev" aria-label="Previous video">
               &#8592;
@@ -149,18 +149,23 @@
             <div class="video-window">
               <div class="video-track" id="video-track">
                 <article class="video-slide">
-                  <div class="video-embed-card">
+                  <div class="video-spotlight-card">
                     <div class="video-media is-short">
-                      <div class="video-media-frame">
-                        <iframe
-                          src="https://www.youtube-nocookie.com/embed/AIR03nP8a8k"
-                          title="NYFMF: Tribeca Festival 2025"
+                      <a
+                        class="video-media-link"
+                        href="https://youtube.com/shorts/AIR03nP8a8k?feature=share"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open NYFMF: Tribeca Festival 2025 on YouTube"
+                      >
+                        <img
+                          class="video-media-thumb"
+                          src="https://i.ytimg.com/vi/AIR03nP8a8k/hqdefault.jpg"
+                          alt="NYFMF: Tribeca Festival 2025 video preview"
                           loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
+                        />
+                        <span class="video-media-play" aria-hidden="true">Play</span>
+                      </a>
                     </div>
                     <div class="video-copy">
                       <span class="video-link-kicker">YouTube Short</span>
@@ -179,78 +184,23 @@
                   </div>
                 </article>
                 <article class="video-slide">
-                  <div class="video-embed-card">
-                    <div class="video-media">
-                      <div class="video-media-frame">
-                        <iframe
-                          src="https://www.youtube-nocookie.com/embed/FRjZ6FrU7-E"
-                          title="STEBA X NBCU Power of Contents Summit Highlights"
-                          loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube</span>
-                      <h3>STEBA X NBCU Power of Contents Summit Highlights</h3>
-                      <p>Summit highlight reel capturing key moments and speaker energy from the event.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtu.be/FRjZ6FrU7-E"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
-                  </div>
-                </article>
-                <article class="video-slide">
-                  <div class="video-embed-card">
-                    <div class="video-media">
-                      <div class="video-media-frame">
-                        <iframe
-                          src="https://www.youtube-nocookie.com/embed/YYBEObWS_rI"
-                          title="Charney: Nevins"
-                          loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube</span>
-                      <h3>Charney: Nevins</h3>
-                      <p>Campaign-style preview linking out to the completed Charney: Nevins video.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtu.be/YYBEObWS_rI"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Charney Nevins video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
-                  </div>
-                </article>
-                <article class="video-slide">
-                  <div class="video-embed-card">
+                  <div class="video-spotlight-card">
                     <div class="video-media is-short">
-                      <div class="video-media-frame">
-                        <iframe
-                          src="https://www.youtube-nocookie.com/embed/8uKWcKV82Uw"
-                          title="Park Slope Halloween Parade"
+                      <a
+                        class="video-media-link"
+                        href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open Park Slope Halloween Parade on YouTube"
+                      >
+                        <img
+                          class="video-media-thumb"
+                          src="https://i.ytimg.com/vi/8uKWcKV82Uw/hqdefault.jpg"
+                          alt="Park Slope Halloween Parade video preview"
                           loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
+                        />
+                        <span class="video-media-play" aria-hidden="true">Play</span>
+                      </a>
                     </div>
                     <div class="video-copy">
                       <span class="video-link-kicker">YouTube Short</span>
@@ -269,18 +219,23 @@
                   </div>
                 </article>
                 <article class="video-slide">
-                  <div class="video-embed-card">
+                  <div class="video-spotlight-card">
                     <div class="video-media is-short">
-                      <div class="video-media-frame">
-                        <iframe
-                          src="https://www.youtube-nocookie.com/embed/ErMFFLHMbCM"
-                          title="STEBA X NBCU: The Power of Content Speaker Highlights"
+                      <a
+                        class="video-media-link"
+                        href="https://youtube.com/shorts/ErMFFLHMbCM"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open STEBA X NBCU: The Power of Content Speaker Highlights on YouTube"
+                      >
+                        <img
+                          class="video-media-thumb"
+                          src="https://i.ytimg.com/vi/ErMFFLHMbCM/hqdefault.jpg"
+                          alt="STEBA X NBCU: The Power of Content Speaker Highlights video preview"
                           loading="lazy"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
+                        />
+                        <span class="video-media-play" aria-hidden="true">Play</span>
+                      </a>
                     </div>
                     <div class="video-copy">
                       <span class="video-link-kicker">YouTube Short</span>
@@ -298,6 +253,76 @@
                     </div>
                   </div>
                 </article>
+                <article class="video-slide">
+                  <div class="video-spotlight-card">
+                    <div class="video-media">
+                      <a
+                        class="video-media-link"
+                        href="https://youtu.be/FRjZ6FrU7-E"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights on YouTube"
+                      >
+                        <img
+                          class="video-media-thumb"
+                          src="https://i.ytimg.com/vi/FRjZ6FrU7-E/hqdefault.jpg"
+                          alt="STEBA X NBCU Power of Contents Summit Highlights video preview"
+                          loading="lazy"
+                        />
+                        <span class="video-media-play" aria-hidden="true">Play</span>
+                      </a>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube</span>
+                      <h3>STEBA X NBCU Power of Contents Summit Highlights</h3>
+                      <p>Summit highlight reel capturing key moments and speaker energy from the event.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtu.be/FRjZ6FrU7-E"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
+                </article>
+                <article class="video-slide">
+                  <div class="video-spotlight-card">
+                    <div class="video-media">
+                      <a
+                        class="video-media-link"
+                        href="https://youtu.be/YYBEObWS_rI"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open Charney: Nevins on YouTube"
+                      >
+                        <img
+                          class="video-media-thumb"
+                          src="https://i.ytimg.com/vi/YYBEObWS_rI/hqdefault.jpg"
+                          alt="Charney: Nevins video preview"
+                          loading="lazy"
+                        />
+                        <span class="video-media-play" aria-hidden="true">Play</span>
+                      </a>
+                    </div>
+                    <div class="video-copy">
+                      <span class="video-link-kicker">YouTube</span>
+                      <h3>Charney: Nevins</h3>
+                      <p>Campaign-style preview linking out to the completed Charney: Nevins video.</p>
+                      <a
+                        class="video-link-action"
+                        href="https://youtu.be/YYBEObWS_rI"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Open Charney Nevins video on YouTube"
+                      >
+                        Watch on YouTube
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
             <button class="video-arrow video-arrow-next" id="video-next" aria-label="Next video">
@@ -307,73 +332,10 @@
         </div>
       </section>
 
-      <section id="interactive" class="panel interactive reveal" data-panel>
-        <div class="interactive-head">
-          <p class="panel-index">03</p>
-          <h2>INTERACTIVE PROJECTS</h2>
-          <p class="interactive-meta">
-            Developed interactive web projects using p5.js and JavaScript, creating playable experiences such as
-            browser-based games, conversational AI interactions, and creative coding projects that blend creativity with
-            code to form engaging digital narratives.
-          </p>
-          <div class="line" aria-hidden="true"></div>
-        </div>
-        <div class="project-grid">
-          <article class="project-card tilt-card" tabindex="0">
-            <div class="card-visual">
-              <div class="gradient game"></div>
-              <img
-                class="project-thumb"
-                src="./assets/catch-the-burger.png"
-                alt="Catch the Burger project screenshot"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Catch the Burger</h3>
-              <p>
-                A playful p5.js game that reimagines Snake with a burger-inspired pixel aesthetic and arcade-style interaction.
-              </p>
-              <a
-                class="ghost-btn"
-                href="https://editor.p5js.org/sp6288/full/W5ZpbXJHc"
-                target="_blank"
-                rel="noreferrer"
-                >Play</a
-              >
-            </div>
-          </article>
-          <article class="project-card tilt-card" tabindex="0">
-            <div class="card-visual">
-              <div class="gradient ai"></div>
-              <img
-                class="project-thumb"
-                src="./assets/talk-to-me.png"
-                alt="Talk to Me project screenshot"
-                loading="lazy"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Talk to Me!</h3>
-              <p>
-                An interactive AI chat experience exploring self-discovery inspired by MBTI. Through conversation, Robo discovers what’s on your mind and identifies your personality in real time.
-              </p>
-              <a
-                class="ghost-btn"
-                href="https://editor.p5js.org/sp6288/full/iQTGXNneZ"
-                target="_blank"
-                rel="noreferrer"
-                >Play</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
       <section id="manual" class="panel manual reveal" data-panel>
         <div class="manual-wrap">
           <div class="manual-title">
-            <p class="panel-index">04</p>
+            <p class="panel-index">03</p>
             <h2>USER<br />MANUAL</h2>
             <p class="manual-subcopy">click to learn more about me</p>
           </div>
@@ -471,7 +433,7 @@
       <section id="map" class="panel steba-panel reveal" data-panel>
         <div class="steba-shell">
           <div class="steba-stack" role="tablist" aria-label="STEBA sections">
-            <p class="panel-index steba-section-index">05</p>
+            <p class="panel-index steba-section-index">04</p>
             <button
               class="steba-row active"
               data-steba-row
@@ -555,7 +517,7 @@ Vertigo - Caleb Kim (Summer 2024), Short Film
 
       <section id="contacts" class="panel contacts reveal" data-panel>
         <div class="contacts-title">
-          <p class="panel-index">06</p>
+          <p class="panel-index">05</p>
           <h2>Contacts</h2>
           <p>Let’s build something elegant and alive.</p>
         </div>
