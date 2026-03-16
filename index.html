@@ -6,549 +6,423 @@
     <title>Ann Park Portfolio</title>
     <meta
       name="description"
-      content="Ann Park portfolio website with profile, video projects, and contact information."
+      content="Ann Park portfolio website with profile, video projects, creative work, and contact information."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
-    <div class="scribble-overlay" aria-hidden="true"></div>
-    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="site-bg" aria-hidden="true"></div>
 
-    <header class="top-nav">
-      <a href="#hero" class="brand">AP</a>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#video">Video Projects</a>
-        <a href="#manual">User Manual</a>
-        <a href="#map">Other Projects</a>
-        <a href="#contacts">Contacts</a>
+    <header class="site-header">
+      <div class="header-shell">
+        <a href="#hero" class="brand" aria-label="Ann Park home">AP</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#video">Video</a>
+          <a href="#manual">Manual</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Contact</a>
+        </nav>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">
+          Menu
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#video">Video</a>
+        <a href="#manual">Manual</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contact</a>
       </nav>
-      <button class="menu-btn" aria-expanded="false" aria-controls="mobile-nav">
-        Menu
-      </button>
     </header>
 
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
-      <a href="#hero">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#video">Video Projects</a>
-      <a href="#manual">User Manual</a>
-      <a href="#map">Other Projects</a>
-      <a href="#contacts">Contacts</a>
-    </nav>
-
     <main>
-      <section id="hero" class="panel hero reveal" data-panel>
-        <div class="hero-grid">
-          <div class="hero-copy">
+      <section id="hero" class="section hero-section reveal">
+        <div class="section-shell hero-layout">
+          <div class="hero-copy surface">
             <p class="eyebrow">Creative Producer · Global Marketer</p>
-            <h1>
-              <span class="line hero-name-line">Ann Park</span>
-              <span class="line accent">Portfolio</span>
-            </h1>
-            <p class="hero-desc">
-              NYU Alum | B.A in Film &amp; Television, Minor in Business of Entertainment, Media and Technology.
+            <h1>Ann Park</h1>
+            <p class="hero-lead">
+              Storytelling, production, and marketing work shaped by film training,
+              business context, and a strong interest in interactive media.
             </p>
             <div class="hero-actions">
-              <a class="cta" href="#video">View Projects</a>
-              <a class="link-cta" href="#about">About Me</a>
+              <a class="button button-dark" href="#video">View Projects</a>
+              <a class="button button-light" href="#about">About Me</a>
             </div>
           </div>
-          <div class="hero-frame tilt-card">
-            <div class="hero-frame-inner">
-              <p class="typing-line">
-                <span class="label">Ann is a</span>
-                <span id="typing-target" aria-live="polite"></span>
-              </p>
-              <div class="floating-tags">
-                <button class="tag-chip is-active" data-word="Global Marketer">Global Marketer</button>
-                <button class="tag-chip" data-word="Visual Storyteller">Visual Storyteller</button>
-                <button class="tag-chip" data-word="Producer">Producer</button>
-                <button class="tag-chip" data-word="Interaction Maker">Interaction Maker</button>
-              </div>
+          <div class="hero-card surface">
+            <p class="hero-card-label">Focus</p>
+            <div class="hero-roles" aria-label="Ann Park roles">
+              <button class="role-chip is-active" type="button" data-word="Global Marketer">
+                Global Marketer
+              </button>
+              <button class="role-chip" type="button" data-word="Producer">Producer</button>
+              <button class="role-chip" type="button" data-word="Visual Storyteller">
+                Visual Storyteller
+              </button>
+              <button class="role-chip" type="button" data-word="Creative Strategist">
+                Creative Strategist
+              </button>
             </div>
+            <p class="hero-role-output">
+              Ann is a <strong id="typing-target">Global Marketer</strong>
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="about" class="panel about reveal" data-panel>
-        <div class="about-layout">
-          <div class="about-top">
-            <p class="panel-index">01</p>
-            <div class="about-left-column">
-              <h2 class="about-display">ABOUT ME</h2>
-              <figure class="about-portrait-frame tilt-card">
-                <img
-                  src="./assets/about-portrait-2.jpg"
-                  alt="Ann Park portrait"
-                  class="about-portrait-image"
-                  loading="lazy"
-                />
-              </figure>
+      <section id="about" class="section reveal">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">01</p>
+            <div>
+              <p class="section-kicker">Profile</p>
+              <h2>About Me</h2>
             </div>
           </div>
-          <div class="about-feature-card tilt-card" aria-label="Ann Park short bio card">
-            <div class="about-feature-inner">
-              <p class="about-feature-kicker">About / Short Bio</p>
-              <h3 class="about-feature-name">Ann Park</h3>
-              <p class="about-feature-bio">
+          <div class="about-grid">
+            <figure class="about-portrait surface">
+              <img
+                src="./assets/about-portrait-2.jpg"
+                alt="Ann Park portrait"
+                loading="lazy"
+              />
+            </figure>
+            <article class="about-copy surface">
+              <h3>Film, marketing, and production with a practical point of view.</h3>
+              <p>
                 Ann is a recent Film and Television graduate from NYU Tisch with a
-                minor in Business of Entertainment, Media and Technology.
-                <br /><br />
-                Ann is an aspiring marketer and producer interested in the use of
-                interactive and as a creative medium and ethical AI practices.
-                Through projects that combine storytelling and technology, she
-                explores how AI can be integrated into creative and business
-                workflows. With hands-on experience across the U.S. and South
-                Korea, she is driven to bring meaningful projects to life.
+                minor in the Business of Entertainment, Media and Technology.
               </p>
-              <div class="about-links">
-                <a
-                  href="file:///Users/annpark/Desktop/Ann%20Park_Resume.pdf"
-                  aria-label="Resume"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Resume</a
-                >
-                <a
-                  href="https://www.linkedin.com/in/annparksuh/"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noreferrer"
-                  >LinkedIn</a
-                >
+              <p>
+                She is interested in producing and marketing projects that connect
+                strong narrative ideas with thoughtful digital execution, especially
+                where emerging technology can support creative workflows in ethical
+                and useful ways.
+              </p>
+              <p>
+                With hands-on experience across the U.S. and South Korea, she brings
+                a global perspective to collaboration, planning, and visual
+                storytelling.
+              </p>
+              <div class="link-row">
+                <a href="file:///Users/annpark/Desktop/Ann%20Park_Resume.pdf" target="_blank" rel="noreferrer">
+                  Resume
+                </a>
+                <a href="https://www.linkedin.com/in/annparksuh/" target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="video" class="panel video-panel reveal" data-panel>
-        <div class="video-shell">
-          <header class="video-header-card">
-            <p class="panel-index">02</p>
-            <div class="video-header-copy">
-              <h2 class="video-display">VIDEO PROJECTS</h2>
-              <p class="video-header-meta">
-                Worked on a variety of video projects, producing marketing content and short-form vertical videos for digital
-                platforms, leading the creative planning and production process from development to post-production.
-              </p>
+      <section id="video" class="section reveal">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">02</p>
+            <div>
+              <p class="section-kicker">Selected Work</p>
+              <h2>Video Projects</h2>
             </div>
-          </header>
-          <div class="video-stage">
-            <button class="video-arrow video-arrow-prev" id="video-prev" aria-label="Previous video">
+          </div>
+          <p class="section-intro">
+            Marketing content and short-form video work spanning concept development,
+            production coordination, and post-production delivery.
+          </p>
+          <div class="carousel surface">
+            <button class="carousel-arrow" id="video-prev" type="button" aria-label="Previous video">
               &#8592;
             </button>
-            <div class="video-window">
-              <div class="video-track" id="video-track">
-                <article class="video-slide">
-                  <div class="video-spotlight-card">
-                    <div class="video-media is-short">
-                      <a
-                        class="video-media-link"
-                        href="https://youtube.com/shorts/AIR03nP8a8k?feature=share"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open NYFMF: Tribeca Festival 2025 on YouTube"
-                      >
-                        <img
-                          class="video-media-thumb"
-                          src="https://i.ytimg.com/vi/AIR03nP8a8k/hqdefault.jpg"
-                          alt="NYFMF: Tribeca Festival 2025 video preview"
-                          loading="lazy"
-                        />
-                        <span class="video-media-play" aria-hidden="true">Play</span>
-                      </a>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube Short</span>
-                      <h3>NYFMF: Tribeca Festival 2025</h3>
-                      <p>Short-form festival preview for NYFMF at Tribeca Festival 2025.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtube.com/shorts/AIR03nP8a8k?feature=share"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open NYFMF Tribeca Festival 2025 video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
+            <div class="carousel-window">
+              <div class="carousel-track" id="video-track">
+                <article class="video-card">
+                  <div class="video-thumb video-thumb-short">
+                    <a href="https://youtube.com/shorts/AIR03nP8a8k?feature=share" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://i.ytimg.com/vi/AIR03nP8a8k/hqdefault.jpg"
+                        alt="NYFMF Tribeca Festival 2025 video preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="video-body">
+                    <p class="video-type">YouTube Short</p>
+                    <h3>NYFMF: Tribeca Festival 2025</h3>
+                    <p>Short-form festival preview built for fast, social-first engagement.</p>
+                    <a href="https://youtube.com/shorts/AIR03nP8a8k?feature=share" target="_blank" rel="noreferrer">
+                      Watch on YouTube
+                    </a>
                   </div>
                 </article>
-                <article class="video-slide">
-                  <div class="video-spotlight-card">
-                    <div class="video-media is-short">
-                      <a
-                        class="video-media-link"
-                        href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Park Slope Halloween Parade on YouTube"
-                      >
-                        <img
-                          class="video-media-thumb"
-                          src="https://i.ytimg.com/vi/8uKWcKV82Uw/hqdefault.jpg"
-                          alt="Park Slope Halloween Parade video preview"
-                          loading="lazy"
-                        />
-                        <span class="video-media-play" aria-hidden="true">Play</span>
-                      </a>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube Short</span>
-                      <h3>Park Slope Halloween Parade</h3>
-                      <p>Vertical short capturing the atmosphere and motion of the Brooklyn parade.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Park Slope Halloween Parade video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
+                <article class="video-card">
+                  <div class="video-thumb video-thumb-short">
+                    <a href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://i.ytimg.com/vi/8uKWcKV82Uw/hqdefault.jpg"
+                        alt="Park Slope Halloween Parade video preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="video-body">
+                    <p class="video-type">YouTube Short</p>
+                    <h3>Park Slope Halloween Parade</h3>
+                    <p>Vertical short capturing movement, atmosphere, and audience energy.</p>
+                    <a href="https://youtube.com/shorts/8uKWcKV82Uw?feature=share" target="_blank" rel="noreferrer">
+                      Watch on YouTube
+                    </a>
                   </div>
                 </article>
-                <article class="video-slide">
-                  <div class="video-spotlight-card">
-                    <div class="video-media is-short">
-                      <a
-                        class="video-media-link"
-                        href="https://youtube.com/shorts/ErMFFLHMbCM"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open STEBA X NBCU: The Power of Content Speaker Highlights on YouTube"
-                      >
-                        <img
-                          class="video-media-thumb"
-                          src="https://i.ytimg.com/vi/ErMFFLHMbCM/hqdefault.jpg"
-                          alt="STEBA X NBCU: The Power of Content Speaker Highlights video preview"
-                          loading="lazy"
-                        />
-                        <span class="video-media-play" aria-hidden="true">Play</span>
-                      </a>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube Short</span>
-                      <h3>STEBA X NBCU: The Power of Content Speaker Highlights</h3>
-                      <p>Short-form speaker highlight cut focused on stage moments and audience engagement.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtube.com/shorts/ErMFFLHMbCM"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open STEBA X NBCU The Power of Content Speaker Highlights video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
+                <article class="video-card">
+                  <div class="video-thumb video-thumb-short">
+                    <a href="https://youtube.com/shorts/ErMFFLHMbCM" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://i.ytimg.com/vi/ErMFFLHMbCM/hqdefault.jpg"
+                        alt="STEBA X NBCU speaker highlights preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="video-body">
+                    <p class="video-type">YouTube Short</p>
+                    <h3>STEBA X NBCU Speaker Highlights</h3>
+                    <p>Highlight cut focused on speakers, audience response, and event momentum.</p>
+                    <a href="https://youtube.com/shorts/ErMFFLHMbCM" target="_blank" rel="noreferrer">
+                      Watch on YouTube
+                    </a>
                   </div>
                 </article>
-                <article class="video-slide">
-                  <div class="video-spotlight-card">
-                    <div class="video-media">
-                      <a
-                        class="video-media-link"
-                        href="https://youtu.be/FRjZ6FrU7-E"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights on YouTube"
-                      >
-                        <img
-                          class="video-media-thumb"
-                          src="https://i.ytimg.com/vi/FRjZ6FrU7-E/hqdefault.jpg"
-                          alt="STEBA X NBCU Power of Contents Summit Highlights video preview"
-                          loading="lazy"
-                        />
-                        <span class="video-media-play" aria-hidden="true">Play</span>
-                      </a>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube</span>
-                      <h3>STEBA X NBCU Power of Contents Summit Highlights</h3>
-                      <p>Summit highlight reel capturing key moments and speaker energy from the event.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtu.be/FRjZ6FrU7-E"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open STEBA X NBCU Power of Contents Summit Highlights video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
+                <article class="video-card">
+                  <div class="video-thumb">
+                    <a href="https://youtu.be/FRjZ6FrU7-E" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://i.ytimg.com/vi/FRjZ6FrU7-E/hqdefault.jpg"
+                        alt="STEBA X NBCU summit highlights preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="video-body">
+                    <p class="video-type">YouTube</p>
+                    <h3>STEBA X NBCU Summit Highlights</h3>
+                    <p>Event recap video featuring key moments and a clear editorial rhythm.</p>
+                    <a href="https://youtu.be/FRjZ6FrU7-E" target="_blank" rel="noreferrer">
+                      Watch on YouTube
+                    </a>
                   </div>
                 </article>
-                <article class="video-slide">
-                  <div class="video-spotlight-card">
-                    <div class="video-media">
-                      <a
-                        class="video-media-link"
-                        href="https://youtu.be/YYBEObWS_rI"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Charney: Nevins on YouTube"
-                      >
-                        <img
-                          class="video-media-thumb"
-                          src="https://i.ytimg.com/vi/YYBEObWS_rI/hqdefault.jpg"
-                          alt="Charney: Nevins video preview"
-                          loading="lazy"
-                        />
-                        <span class="video-media-play" aria-hidden="true">Play</span>
-                      </a>
-                    </div>
-                    <div class="video-copy">
-                      <span class="video-link-kicker">YouTube</span>
-                      <h3>Charney: Nevins</h3>
-                      <p>Campaign-style preview linking out to the completed Charney: Nevins video.</p>
-                      <a
-                        class="video-link-action"
-                        href="https://youtu.be/YYBEObWS_rI"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Charney Nevins video on YouTube"
-                      >
-                        Watch on YouTube
-                      </a>
-                    </div>
+                <article class="video-card">
+                  <div class="video-thumb">
+                    <a href="https://youtu.be/YYBEObWS_rI" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://i.ytimg.com/vi/YYBEObWS_rI/hqdefault.jpg"
+                        alt="Charney Nevins video preview"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="video-body">
+                    <p class="video-type">YouTube</p>
+                    <h3>Charney: Nevins</h3>
+                    <p>Campaign-style preview designed to direct viewers to the full piece.</p>
+                    <a href="https://youtu.be/YYBEObWS_rI" target="_blank" rel="noreferrer">
+                      Watch on YouTube
+                    </a>
                   </div>
                 </article>
               </div>
             </div>
-            <button class="video-arrow video-arrow-next" id="video-next" aria-label="Next video">
+            <button class="carousel-arrow" id="video-next" type="button" aria-label="Next video">
               &#8594;
             </button>
           </div>
         </div>
       </section>
 
-      <section id="manual" class="panel manual reveal" data-panel>
-        <div class="manual-wrap">
-          <div class="manual-title">
-            <p class="panel-index">03</p>
-            <h2>USER<br />MANUAL</h2>
-            <p class="manual-subcopy">click to learn more about me</p>
+      <section id="manual" class="section reveal">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">03</p>
+            <div>
+              <p class="section-kicker">Working Style</p>
+              <h2>User Manual</h2>
+            </div>
           </div>
-          <div class="bubble-stage" id="bubble-stage" aria-label="User manual categories">
-            <button class="bubble active" style="--x:10%;--y:14%;" data-manual-card="manual-communications">
-              Communications
-            </button>
-            <button class="bubble" style="--x:25%;--y:40%;" data-manual-card="manual-feedback">
-              Feedback
-            </button>
-            <button class="bubble" style="--x:50%;--y:34%;" data-manual-card="manual-struggles">
-              Struggles
-            </button>
-            <button class="bubble" style="--x:72%;--y:16%;" data-manual-card="manual-conditions">
-              Conditions
-            </button>
-            <button class="bubble" style="--x:16%;--y:68%;" data-manual-card="manual-needs">
-              Needs
-            </button>
-            <button class="bubble" style="--x:67%;--y:60%;" data-manual-card="manual-other">
-              Other Things
-            </button>
-          </div>
-          <aside class="manual-note" aria-label="User manual details">
-            <div class="manual-card-stack">
-              <section class="manual-pop-card active" id="manual-communications">
-                <p class="manual-card-label">Communications</p>
+          <div class="manual-layout">
+            <div class="manual-tabs" role="tablist" aria-label="User manual categories">
+              <button class="manual-tab is-active" type="button" data-manual-card="manual-communications">
+                Communications
+              </button>
+              <button class="manual-tab" type="button" data-manual-card="manual-feedback">
+                Feedback
+              </button>
+              <button class="manual-tab" type="button" data-manual-card="manual-struggles">
+                Struggles
+              </button>
+              <button class="manual-tab" type="button" data-manual-card="manual-conditions">
+                Conditions
+              </button>
+              <button class="manual-tab" type="button" data-manual-card="manual-needs">
+                Needs
+              </button>
+              <button class="manual-tab" type="button" data-manual-card="manual-other">
+                Other Things
+              </button>
+            </div>
+            <div class="manual-panels surface">
+              <section class="manual-panel is-active" id="manual-communications">
                 <h3>The best ways to communicate with me</h3>
                 <ul>
-                  <li>Text and email are the quickest ways to get a response from me.</li>
-                  <li>If something is time-sensitive, flagging it clearly helps me prioritize quickly.</li>
+                  <li>Text and email are usually the fastest ways to reach me.</li>
+                  <li>For urgent work, a clear subject or priority note helps me respond quickly.</li>
                 </ul>
               </section>
-
-              <section class="manual-pop-card" id="manual-feedback" hidden>
-                <p class="manual-card-label">Feedback</p>
+              <section class="manual-panel" id="manual-feedback" hidden>
                 <h3>The ways I like to receive feedback</h3>
                 <ul>
-                  <li>
-                    I see all feedback as a learning opportunity and a way to better understand expectations.
-                  </li>
-                  <li>I prefer direct feedback with specific suggestions and examples.</li>
+                  <li>I value direct feedback with concrete suggestions and examples.</li>
+                  <li>I see feedback as a useful part of learning and improving.</li>
                 </ul>
               </section>
-
-              <section class="manual-pop-card" id="manual-struggles" hidden>
-                <p class="manual-card-label">Struggles</p>
+              <section class="manual-panel" id="manual-struggles" hidden>
                 <h3>Things I struggle with</h3>
                 <ul>
-                  <li>
-                    I struggle when I don’t understand the purpose or bigger picture of a task. Clear goals and context help me perform at my best.
-                  </li>
-                  <li>
-                    Too much critique without encouragement can drain my energy. I thrive when feedback includes both strengths and areas to grow.
-                  </li>
+                  <li>It is harder to do my best work when the bigger purpose of a task is unclear.</li>
+                  <li>Heavy critique without encouragement can slow my momentum.</li>
                 </ul>
               </section>
-
-              <section class="manual-pop-card" id="manual-conditions" hidden>
-                <p class="manual-card-label">Conditions</p>
+              <section class="manual-panel" id="manual-conditions" hidden>
                 <h3>Conditions I like to work in</h3>
                 <ul>
-                  <li>I work best in a quiet environment with personal space to concentrate.</li>
-                  <li>
-                    I often wear earbuds to block out distractions, but please feel free to interrupt me if needed.
-                  </li>
+                  <li>I focus best in a quiet environment with room to concentrate.</li>
+                  <li>I often use earbuds to reduce distractions, but interruptions are okay when needed.</li>
                 </ul>
               </section>
-
-              <section class="manual-pop-card" id="manual-needs" hidden>
-                <p class="manual-card-label">Needs</p>
+              <section class="manual-panel" id="manual-needs" hidden>
                 <h3>Things I need</h3>
                 <ul>
-                  <li>I love exchanging ideas and hearing different perspectives. It sparks my creativity.</li>
-                  <li>I need short mental resets between major tasks to recharge and maintain quality.</li>
-                  <li>Clear deadlines help me manage my time and prioritize effectively.</li>
+                  <li>I enjoy exchanging ideas and hearing different perspectives.</li>
+                  <li>Clear deadlines and short resets between major tasks help me sustain quality.</li>
                 </ul>
               </section>
-
-              <section class="manual-pop-card" id="manual-other" hidden>
-                <p class="manual-card-label">Other Things</p>
+              <section class="manual-panel" id="manual-other" hidden>
                 <h3>Other things to know about me</h3>
                 <ul>
-                  <li>
-                    If something feels off or unclear, I may ask follow-up questions, not to challenge, but to make sure I deliver my best work.
-                  </li>
-                  <li>I’m always trying to grow, improve, and become better than I was yesterday.</li>
+                  <li>I ask follow-up questions when I want to make sure the work is right.</li>
+                  <li>I care a lot about steady growth and doing better work over time.</li>
                 </ul>
               </section>
             </div>
-          </aside>
+          </div>
         </div>
       </section>
 
-      <section id="map" class="panel steba-panel reveal" data-panel>
-        <div class="steba-shell">
-          <div class="steba-stack" role="tablist" aria-label="STEBA sections">
-            <p class="panel-index steba-section-index">04</p>
-            <button
-              class="steba-row active"
-              data-steba-row
-              data-target="steba-1"
-              data-media-key="steba"
-              data-title="STEBA"
-              data-description="STEBA is an active club for students passionate about the entertainment business, encompassing diverse sectors such as television, music, film, games, and sports."
-              role="tab"
-              aria-selected="true"
-            >
-              <span>STEBA</span>
-              <small>Creative framework</small>
-            </button>
-            <button
-              class="steba-row"
-              data-steba-row
-              data-target="steba-2"
-              data-media-key="producer-ad"
-              data-title="Producer"
-              data-description="Producer Works:
-Bursting at the Fold - Caleb Kim (Fall 2025-Spring 2026), Short Film
-Cupbap - David Choi (Fall 2025-Spring 2026), Short Film
-Afterimage - Mia Dang (Fall 2025), Music Video
-L'esprit du debutant - David Choi (Spring 2025), Short Film
-Berry Blue - Caleb Kim (Fall 2024), Short Film
-Missing People - Jihyun Mun (Spring 2024), Short Vertical Commercial
-Vertigo - Caleb Kim (Summer 2024), Short Film
-"
-              role="tab"
-              aria-selected="false"
-            >
-              <span>Producer</span>
-              <small>Role and process</small>
-            </button>
-            <button
-              class="steba-row"
-              data-steba-row
-              data-target="steba-3"
-              data-media-key="graphics"
-              data-title="Graphics"
-              data-description="Poster systems, social assets, and editorial compositions built with a clear visual hierarchy and campaign-focused storytelling."
-              role="tab"
-              aria-selected="false"
-            >
-              <span>Graphics</span>
-              <small>Visual campaigns</small>
-            </button>
-          </div>
-          <div class="steba-detail" id="steba-detail">
-            <div class="steba-pane active" id="steba-live-pane" role="tabpanel">
-              <div class="steba-media is-visible" id="steba-media">
-                <div class="steba-slider-window">
-                  <div class="steba-slider-track" id="steba-slider-track">
-                    <img src="./assets/steba/1714763578614.jpg" alt="STEBA event photo 1" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1714763578710.jpg" alt="STEBA event photo 2" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1727196005428.jpg" alt="STEBA event photo 3" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1727196008346.jpg" alt="STEBA event photo 4" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1729023511125.jpg" alt="STEBA event photo 5" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1729023511173.jpg" alt="STEBA event photo 6" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1730501108072.jpg" alt="STEBA event photo 7" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1745089146437.jpg" alt="STEBA event photo 8" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1759688681030.jpg" alt="STEBA event photo 9" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1759688681162.jpg" alt="STEBA event photo 10" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/1T5A8858 copy.JPG" alt="STEBA event photo 11" class="steba-slide" loading="lazy" />
-                    <img src="./assets/steba/IMG_7342.jpeg" alt="STEBA event photo 12" class="steba-slide" loading="lazy" />
-                  </div>
-                </div>
-                <div class="steba-slider-dots" id="steba-slider-dots" aria-hidden="true"></div>
-              </div>
-              <div class="steba-copy" id="steba-copy">
-                <h3 id="steba-live-title">STEBA</h3>
-                <p id="steba-live-description">
-                  STEBA is an active club for students passionate about the entertainment business,
-                  encompassing diverse sectors such as television, music, film, games, and sports.
-                </p>
-              </div>
+      <section id="projects" class="section reveal">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">04</p>
+            <div>
+              <p class="section-kicker">Expanded Practice</p>
+              <h2>Other Projects</h2>
             </div>
           </div>
+          <div class="project-grid">
+            <article class="project-card surface">
+              <div class="project-copy">
+                <p class="project-type">STEBA</p>
+                <h3>Entertainment club programming and event storytelling</h3>
+                <p>
+                  STEBA is a student community focused on the entertainment business
+                  across television, music, film, games, and sports. The work here
+                  centers on programming support, promotion, and event coverage.
+                </p>
+              </div>
+              <div class="project-gallery two-up">
+                <img src="./assets/steba/1714763578614.jpg" alt="STEBA event photo" loading="lazy" />
+                <img src="./assets/steba/1745089146437.jpg" alt="STEBA event audience photo" loading="lazy" />
+              </div>
+            </article>
+            <article class="project-card surface">
+              <div class="project-copy">
+                <p class="project-type">Producer</p>
+                <h3>Short film and music video production support</h3>
+                <p>
+                  Production roles across narrative and music projects, with experience
+                  supporting logistics, coordination, and execution from prep through shoot.
+                </p>
+              </div>
+              <div class="project-gallery three-up">
+                <img src="./assets/producer-ad/goutman.jpg" alt="Producer project still 1" loading="lazy" />
+                <img src="./assets/producer-ad/img-4213.jpeg" alt="Producer project still 2" loading="lazy" />
+                <img src="./assets/producer-ad/img-4957.jpg" alt="Producer project still 3" loading="lazy" />
+              </div>
+            </article>
+            <article class="project-card surface">
+              <div class="project-copy">
+                <p class="project-type">Graphics</p>
+                <h3>Campaign graphics, posters, and social assets</h3>
+                <p>
+                  Visual systems developed for promotion and editorial storytelling,
+                  balancing strong hierarchy with campaign consistency.
+                </p>
+              </div>
+              <div class="project-gallery three-up graphics-gallery">
+                <img src="./assets/graphics/among-neighbors-review.png" alt="Among Neighbors review graphic" loading="lazy" />
+                <img src="./assets/graphics/among-neighbors-social.png" alt="Among Neighbors social graphic" loading="lazy" />
+                <img src="./assets/graphics/tvs-nuclear-nightmare.png" alt="TV's Nuclear Nightmare graphic" loading="lazy" />
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="contacts" class="panel contacts reveal" data-panel>
-        <div class="contacts-title">
-          <p class="panel-index">05</p>
-          <h2>Contacts</h2>
-          <p>Let’s build something elegant and alive.</p>
-        </div>
-        <div class="contacts-grid">
-          <a href="mailto:annpark1412@gmail.com" class="contact-link">
-            <span>Email</span>
-            <strong>annpark1412@gmail.com</strong>
-          </a>
-          <a href="https://linkedin.com/in/annparksuh/" class="contact-link" target="_blank" rel="noreferrer">
-            <span>LinkedIn</span>
-            <strong>linkedin.com/in/annparksuh/</strong>
-          </a>
-          <a href="https://instagram.com/annparksjin" class="contact-link" target="_blank" rel="noreferrer">
-            <span>Instagram</span>
-            <strong>@annparksjin</strong>
-          </a>
-          <a
-            href="file:///Users/annpark/Desktop/Ann%20Park_Resume.pdf"
-            class="contact-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Resume</span>
-            <strong>Open PDF</strong>
-          </a>
+      <section id="contacts" class="section reveal">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">05</p>
+            <div>
+              <p class="section-kicker">Get In Touch</p>
+              <h2>Contact</h2>
+            </div>
+          </div>
+          <div class="contact-grid">
+            <a class="contact-card surface" href="mailto:annpark1412@gmail.com">
+              <span>Email</span>
+              <strong>annpark1412@gmail.com</strong>
+            </a>
+            <a class="contact-card surface" href="https://linkedin.com/in/annparksuh/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span>
+              <strong>linkedin.com/in/annparksuh</strong>
+            </a>
+            <a class="contact-card surface" href="https://instagram.com/annparksjin" target="_blank" rel="noreferrer">
+              <span>Instagram</span>
+              <strong>@annparksjin</strong>
+            </a>
+            <a
+              class="contact-card surface"
+              href="file:///Users/annpark/Desktop/Ann%20Park_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Resume</span>
+              <strong>Open PDF</strong>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-    <button class="to-top" aria-label="Back to top">↑</button>
+    <button class="to-top" type="button" aria-label="Back to top">Top</button>
 
     <script src="./script.js"></script>
   </body>
-  </html>
+</html>
